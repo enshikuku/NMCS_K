@@ -17,9 +17,14 @@
         }
         .contactPage {
           background-color: rgba(218, 255, 30, 0.9);
+          padding-left: 15px;
+          padding-right: 15px;
+          height: max-content;
         }
         .social_icons_main h1 {
+            max-width: 500px;
             text-align: center;
+            margin: 5px auto;
         }
         .container_social_icons {
             width: 100%;
@@ -146,15 +151,21 @@
         .social_icons li:hover:nth-child(5) a::after {
             background-color: #1ddd57;
         }
-        .container_social_icons .email p, .container_social_icons .email a {
+        .container_social_icons .email a {
           text-decoration: none;
-          font-size: 30px;
+          font-size: 18px;
           color: black;
+        }
+        .container_social_icons .email p {
+          font-size: 20px;
+          color: black;
+          text-align: center;
+          font-weight: bolder;
         }
         .container_social_icons .email img {
           position: relative;
-          top: 8px;
-          height: 30px;
+          top: 5px;
+          height: 20px;
         }
       
         .profileslide div {
@@ -191,10 +202,10 @@
         }
         .swiper h3 {
           text-align: center;
-          font-size: 30px;
+          font-size: 25px;
         }
         .swiper {
-          padding-top: 10px;
+          padding-top: 15px;
         }
       </style>
 </head> 
@@ -232,7 +243,7 @@
               <p>Email us! <br> <a href="mailto:nmcskenya2015@gmail.com"><img src="img//icons/gmail.png" alt=""> nmcskenya2015@gmail.com</a></p>
             </div>
         </div>    
-    </div>
+    </div> <br>
     <!-- Slider main container -->
     <div class="swiper">
       <h3>You can also Contact Our National Leaders</h3>
@@ -303,7 +314,9 @@
     </div>
 
     </div>
-
+    <footer class="container">
+      <p>NMCS KENYA &copy; 2022</p>
+  </footer>
 <script src="js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
