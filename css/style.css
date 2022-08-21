@@ -192,7 +192,6 @@ main {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    align-items: center;
     border-radius: 50px;
     background-size: 100%;
     padding-bottom: 20px;
@@ -379,7 +378,7 @@ footer p {
     #home-1, #chapters-1 {
         background-color: rgba(0, 0, 0, 0.86);
         color: #ffffff;
-        border-radius: 30px;
+        border-radius: 0px;
     }
     #home-1 h1, #chapters-1 h1 {
         font-size:  30px;
@@ -424,6 +423,7 @@ footer p {
     }
     .programs h3 {
         font-size:  30px;
+        text-align: left;
         padding-bottom: 15px;
         line-height: 45px;
         letter-spacing: 5px;
