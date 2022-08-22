@@ -540,11 +540,7 @@ body {
     margin:0;
 } 
 .body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #0099ff;
-    min-height: 100vh;
+    display: none;
 }
 .bg {
     animation:slide 8s ease-in-out infinite alternate;
@@ -579,7 +575,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: absolute; */
+    position: absolute;
+    z-index: 9;
     background-color: #0099ff;
 }
 .spinner{
