@@ -539,9 +539,6 @@ html {
 body {
     margin:0;
 } 
-.body{
-    display: none;
-}
 .bg {
     animation:slide 8s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, #66cc33 50%, #0099ff 50%);
