@@ -396,6 +396,7 @@ footer p {
         flex-direction: column;
         gap: 10px;
         width: 100%;
+        margin-top: 0;
     }
     #home-1, #chapters-1 {
         background-color: rgba(0, 0, 0, 0.86);
