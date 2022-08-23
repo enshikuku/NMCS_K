@@ -594,7 +594,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
+    top: 0;
     z-index: 9;
     background-color: #0099ff;
 }
