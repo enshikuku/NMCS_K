@@ -33,6 +33,9 @@ main {
 .header a:hover {
     border-bottom: 3px solid rgb(255, 255, 255);
     font-size: 32px;
+    position: relative;
+    color: greenyellow;
+    bottom: 5px;
     /* letter-spacing: 2px; */
     transition: .4s;
 }
