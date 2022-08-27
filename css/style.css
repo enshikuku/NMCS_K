@@ -606,17 +606,16 @@ body {
         transform: rotate(360deg);
     }    
 }
-/* scrollbar */
 body::-webkit-scrollbar {
-    width: 7px;               /* width of the entire scrollbar */
+    width: 7px;              
 }
   
 body::-webkit-scrollbar-track {
-    background: #3EC70B;        /* color of the tracking area */
+    background: #3EC70B;        
 }
   
 body::-webkit-scrollbar-thumb {
-    background-color: #0099ff;    /* color of the scroll thumb */
+    background-color: #0099ff;   
     border-radius: 5px; 
-    height: 30px;      /* roundness of the scroll thumb */
+    height: 30px;      
 }
