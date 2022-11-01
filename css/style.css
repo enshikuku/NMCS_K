@@ -348,15 +348,6 @@ footer p {
     
     .header a {
         font-size: 19px;
-        text-decoration: none;
-        color: greenyellow;
-        margin: 5px;
-        transition: .4s;
-    }
-    .header a:hover {
-        transition: .4s;
-        color: yellow;
-        cursor: pointer;
     }
     .header nav {
         display: flex;
