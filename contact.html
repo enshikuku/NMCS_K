@@ -15,11 +15,9 @@
             box-sizing: border-box;
             list-style: none;
         }
-        .contactPage {
+        body {
           background-color: rgba(218, 255, 30, 0.9);
-          padding-left: 15px;
-          padding-right: 15px;
-          height: 100vh;
+          height: max-content;
         }
         .social_icons_main h1 {
             max-width: 500px;
@@ -181,9 +179,25 @@
           height: fit-content;
           text-align: center;
         }
+        .profileslide div p {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
         .profileslide a {
-          text-decoration: none;    
-          color: black;     
+          text-decoration: none;
+          border: 1px solid #00ff62;
+          background-color: #00ff62;
+          border-radius: 13px;
+          font-weight: bolder;
+          padding: 5px;
+          color: darkred;
+          transition: .3s;
+        }
+        .profileslide a:hover {
+          letter-spacing: 2px;
+          transition: .3s;
         }
         .profileslide {
           width: 100%;
@@ -199,7 +213,7 @@
           border-radius: 50%;
         }
         .swiper-wrapper {
-          padding-bottom: 26px;
+          padding-bottom: 32px;
         }
         .swiper .swiper-button-prev, .swiper .swiper-button-next {
           color: white;
@@ -214,67 +228,60 @@
         .swiper {
           padding-top: 50px;
         }
-        
-        @media only screen and (max-width: 730px) {
-          .contactPage {
-            height: 200vh;
-          }
+        header nav #contact {
+          border-bottom: 3px solid greenyellow;
+          color: greenyellow;
         }
       </style>
 </head> 
 <body>
-    <div class="bg"></div>
-    <div class="bg bg2"></div>
-    <div class="bg bg3"></div>
-    <div class="loader">
-        <span class="spinner"></span>
+  <div class="loader">
+    <span class="spinner"></span>
+  </div>
+  <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661327472/NMCS_KENYA/ICONS/top_htccy2.png" alt="Top" onclick="topFunction()" id="scrollTopBtn" title="Go to top">
+  <header id="header" class="header">
+    <div>
+      <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661327472/NMCS_KENYA/ICONS/xicon_grwuiw.png" alt="" id="logo">
+      <p>National Movement of Catholic Students- Kenya</p>
     </div>
-    <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661327472/NMCS_KENYA/ICONS/top_htccy2.png" alt="Top" onclick="topFunction()" id="scrollTopBtn" title="Go to top">
-      <header id="header" class="header">
-        <div>
-            <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661327472/NMCS_KENYA/ICONS/xicon_grwuiw.png" alt="" id="logo">
-            <p>National Movement of Catholic Students- Kenya</p>
+    <nav>
+      <a href="index.html" class="navTab">Home</a>            
+      <a href="about.html" class="navTab">About Us</a>
+      <a href="rsc.html" class="navTab">Resources</a>
+      <a href="contact.html" class="navTab" id="contact">Contacts</a>
+    </nav>
+  </header>
+    <div class="social_icons_main" id="contact">
+      <h1>Click the icons to find our Socials</h1>
+      <div class="container_social_icons">
+        <ul class="social_icons">
+          <li> <a href="https://web.facebook.com/imcs.kenya/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+          <li> <a href="https://www.instagram.com/nmcskenya/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
+          <li> <a href="https://twitter.com/NmcsKenya" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+          <li> <a href="https://www.youtube.com/channel/UC0H1PhoZhJxORHs6jtUoaug" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a> </li>
+          <li> <a href="https://chat.whatsapp.com/BvOBlwYagChLy8zOBhwYVE" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
+        </ul>
+        <div class="email">
+          <p>Email us! <br> <a href="mailto:nmcskenya2015@gmail.com"><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661327472/NMCS_KENYA/ICONS/gmail_pkljxg.png" alt=""> nmcskenya2015@gmail.com</a></p>
         </div>
-        <nav>
-            <a href="index.html" class="navTab">Home</a>            
-            <a href="about.html" class="navTab">About Us</a>
-            <a href="rsc.html" class="navTab">Resources</a>
-            <a href="contact.html" class="navTab">Contacts</a>
-        </nav>
-    </header>
-    <div class="contactPage" id="contact">
-      <div class="social_icons_main" id="contact">
-        <h1>Click the icons to find our Socials</h1>
-        <div class="container_social_icons">
-            <ul class="social_icons">
-                <li> <a href="https://web.facebook.com/imcs.kenya/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
-                <li> <a href="https://www.instagram.com/nmcskenya/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
-                <li> <a href="https://twitter.com/NmcsKenya" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
-                <li> <a href="https://www.youtube.com/channel/UC0H1PhoZhJxORHs6jtUoaug" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a> </li>
-                <li> <a href="https://chat.whatsapp.com/BvOBlwYagChLy8zOBhwYVE" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
-            </ul>
-            <div class="email">
-              <p>Email us! <br> <a href="mailto:nmcskenya2015@gmail.com"><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661327472/NMCS_KENYA/ICONS/gmail_pkljxg.png" alt=""> nmcskenya2015@gmail.com</a></p>
-            </div>
-        </div>    
+      </div>    
     </div> <br>
     <!-- Slider main container -->
     <div class="swiper">
-      <h3>You can also Contact Our National Leaders</h3>
+      <h3><i class="fa fa-whatsapp"></i> Chat with our National Executive</h3>
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-
         <div class="swiper-slide">
           <div class="profileslide" >
             <div>
-                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326939/NMCS_KENYA/PROFILES/father_isadap.jpg" alt="" id="leadershubslides"> <br> <b>Chaplain</b> <br> <i>Rev. Fr. Cosmas Mwova</i> <br> <b><a href="https://wa.me/+254722551398" target="_blank">0722551398</a></b></p>
+                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326939/NMCS_KENYA/PROFILES/father_isadap.jpg" alt="" id="leadershubslides"> <br> <b>Chaplain</b> <br> <i>Rev. Fr. Cosmas Mwova</i> <br> <b><a href="https://wa.me/+254722551398?text=Hello%20Rev.%20Fr.%20Cosmas!%20I've%20been%20viewing%20the%20ɴᴀᴛɪᴏɴᴀʟ%20ᴍᴏᴠᴇᴍᴇɴᴛ%20ᴏғ%20ᴄᴀᴛʜᴏʟɪᴄ%20sᴛᴜᴅᴇɴᴛs%20ᴋᴇɴʏᴀ%20website%20and%20I%20would%20like%20to%20know%20more%20about%20the%20movement" target="_blank"><i class="fa fa-whatsapp"></i> 0722551398</a></b></p>
             </div>
             <div>
-                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326940/NMCS_KENYA/PROFILES/tom_r0gil4.jpg" alt="" id="leadershubslides"> <br> <b>National Coordinator</b> <br> <i>Tom Olando</i> <br> <b><a href="https://wa.me/+254716525488" target="_blank">0716525488</a></b></p>
+                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326940/NMCS_KENYA/PROFILES/tom_r0gil4.jpg" alt="" id="leadershubslides"> <br> <b>National Coordinator</b> <br> <i>Tom Olando</i> <br> <b><a href="https://wa.me/+254716525488?text=Hello%20Tom!%20I've%20been%20viewing%20the%20ɴᴀᴛɪᴏɴᴀʟ%20ᴍᴏᴠᴇᴍᴇɴᴛ%20ᴏғ%20ᴄᴀᴛʜᴏʟɪᴄ%20sᴛᴜᴅᴇɴᴛs%20ᴋᴇɴʏᴀ%20Website%20and%20I%20would%20like%20to%20know%20more%20about%20the%20movement" target="_blank"><i class="fa fa-whatsapp"></i> 0716525488</a></b></p>
             </div>
             <div>
-                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326940/NMCS_KENYA/PROFILES/liz_zgezee.jpg" alt="" id="leadershubslides"> <br> <b>National Coordinator</b> <br> <i>Elizabeth Wanyonyi</i> <br> <b><a href="https://wa.me/+254716365445" target="_blank">0716365445</a></b></p>
+                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326940/NMCS_KENYA/PROFILES/liz_zgezee.jpg" alt="" id="leadershubslides"> <br> <b>National Coordinator</b> <br> <i>Elizabeth Wanyonyi</i> <br> <b><a href="https://wa.me/+254716365445?text=Hello%20Elizabeth!%20I've%20been%20viewing%20the%20ɴᴀᴛɪᴏɴᴀʟ%20ᴍᴏᴠᴇᴍᴇɴᴛ%20ᴏғ%20ᴄᴀᴛʜᴏʟɪᴄ%20sᴛᴜᴅᴇɴᴛs%20ᴋᴇɴʏᴀ%20Website%20and%20I%20would%20like%20to%20know%20more%20about%20the%20movement" target="_blank"><i class="fa fa-whatsapp"></i> 0716365445</a></b></p>
             </div>
           </div>
         </div>
@@ -282,27 +289,13 @@
         <div class="swiper-slide">
           <div class="profileslide" >
             <div>
-                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326939/NMCS_KENYA/PROFILES/okayo_z7ho1a.jpg" alt="" id="leadershubslides"> <br> <b>Chairperson</b> <br> <i>Joshua Okayo</i> <br> <b><a href="https://wa.me/+254748645008" target="_blank">0748645008</a></b></p>
+                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326939/NMCS_KENYA/PROFILES/okayo_z7ho1a.jpg" alt="" id="leadershubslides"> <br> <b>Chairperson</b> <br> <i>Joshua Okayo</i> <br> <b><a href="https://wa.me/+254748645008?text=Hello%20Joshua!%20I've%20been%20viewing%20the%20ɴᴀᴛɪᴏɴᴀʟ%20ᴍᴏᴠᴇᴍᴇɴᴛ%20ᴏғ%20ᴄᴀᴛʜᴏʟɪᴄ%20sᴛᴜᴅᴇɴᴛs%20ᴋᴇɴʏᴀ%20Website%20and%20I%20would%20like%20to%20know%20more%20about%20the%20movement" target="_blank"><i class="fa fa-whatsapp"></i> 0748645008</a></b></p>
             </div>
             <div>
-                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326940/NMCS_KENYA/PROFILES/rael_nft6xn.jpg" alt="" id="leadershubslides"> <br> <b>Vice Chairperson</b> <br> <i>Racheal Mburu</i> <br> <b><a href="https://wa.me/+254717761721" target="_blank">0717761721</a></b></p>
+                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326940/NMCS_KENYA/PROFILES/rael_nft6xn.jpg" alt="" id="leadershubslides"> <br> <b>Vice Chairperson</b> <br> <i>Racheal Mburu</i> <br> <b><a href="https://wa.me/+254717761721?text=Hello%20Rael!%20I've%20been%20viewing%20the%20ɴᴀᴛɪᴏɴᴀʟ%20ᴍᴏᴠᴇᴍᴇɴᴛ%20ᴏғ%20ᴄᴀᴛʜᴏʟɪᴄ%20sᴛᴜᴅᴇɴᴛs%20ᴋᴇɴʏᴀ%20Website%20and%20I%20would%20like%20to%20know%20more%20about%20the%20movement" target="_blank"><i class="fa fa-whatsapp"></i> 0717761721</a></b></p>
             </div>
             <div>
-                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326940/NMCS_KENYA/PROFILES/romans_njmqgw.jpg" alt="" id="leadershubslides"> <br> <b>Treasurer</b> <br> <i>Romans Kiplagat</i> <br> <b><a href="https://wa.me/+254715439213" target="_blank">0715439213</a></b></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="profileslide" >
-            <div>
-                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326940/NMCS_KENYA/PROFILES/ruth_y7nhge.jpg" alt="" id="leadershubslides"> <br> <b>Secretary</b> <br> <i>Ruth Mwihaki</i> <br> <b><a href="https://wa.me/+254711634878" target="_blank">0711634878</a></b></p>
-            </div>
-            <div>
-                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326939/NMCS_KENYA/PROFILES/leonidah_w5tyzz.jpg" alt="" id="leadershubslides"> <br> <b>Vice Secretary</b> <br> <i>Leonidah Nyaboke</i> <br> <b><a href="https://wa.me/+254746913931" target="_blank">0746913931</a></b></p>
-            </div>
-            <div>
-                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326940/NMCS_KENYA/PROFILES/shikuku_x21d6g.jpg" alt="" id="leadershubslides"> <br> <b>Organising Secretary</b> <br> <i>Shikuku Emmanuel</i> <br> <b><a href="https://wa.me/+254757321358" target="_blank">0757321358</a></b></p>
+                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326940/NMCS_KENYA/PROFILES/romans_njmqgw.jpg" alt="" id="leadershubslides"> <br> <b>Treasurer</b> <br> <i>Romans Kiplagat</i> <br> <b><a href="https://wa.me/+254715439213?text=Hello%20Romans!%20I've%20been%20viewing%20the%20ɴᴀᴛɪᴏɴᴀʟ%20ᴍᴏᴠᴇᴍᴇɴᴛ%20ᴏғ%20ᴄᴀᴛʜᴏʟɪᴄ%20sᴛᴜᴅᴇɴᴛs%20ᴋᴇɴʏᴀ%20Website%20and%20I%20would%20like%20to%20know%20more%20about%20the%20movement" target="_blank"><i class="fa fa-whatsapp"></i> 0715439213</a></b></p>
             </div>
           </div>
         </div>
@@ -310,10 +303,24 @@
         <div class="swiper-slide">
           <div class="profileslide" >
             <div>
-                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326939/NMCS_KENYA/PROFILES/clinton_kdf6uo.jpg" alt="" id="leadershubslides"> <br> <b>Publicity Secretary</b> <br> <i>Clinton Maranga</i> <br> <b><a href="https://wa.me/+254768010294" target="_blank">0768010294</a></b></p>
+                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326940/NMCS_KENYA/PROFILES/ruth_y7nhge.jpg" alt="" id="leadershubslides"> <br> <b>Secretary</b> <br> <i>Ruth Mwihaki</i> <br> <b><a href="https://wa.me/+254711634878?text=Hello%20Ruth!%20I've%20been%20viewing%20the%20ɴᴀᴛɪᴏɴᴀʟ%20ᴍᴏᴠᴇᴍᴇɴᴛ%20ᴏғ%20ᴄᴀᴛʜᴏʟɪᴄ%20sᴛᴜᴅᴇɴᴛs%20ᴋᴇɴʏᴀ%20Website%20and%20I%20would%20like%20to%20know%20more%20about%20the%20movement" target="_blank"><i class="fa fa-whatsapp"></i> 0711634878</a></b></p>
             </div>
             <div>
-                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326939/NMCS_KENYA/PROFILES/ibrahim_q2xj32.jpg" alt="" id="leadershubslides"> <br> <b>Representative of NMCS to the NYC and KCCB</b>  <br> <i>Ibrahim Barasa</i> <br> <b><a href="https://wa.me/+254741256149" target="_blank">0741256149</a></b></p>
+                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326939/NMCS_KENYA/PROFILES/leonidah_w5tyzz.jpg" alt="" id="leadershubslides"> <br> <b>Vice Secretary</b> <br> <i>Leonidah Nyaboke</i> <br> <b><a href="https://wa.me/+254746913931?text=Hello%20Leonidah!%20I've%20been%20viewing%20the%20ɴᴀᴛɪᴏɴᴀʟ%20ᴍᴏᴠᴇᴍᴇɴᴛ%20ᴏғ%20ᴄᴀᴛʜᴏʟɪᴄ%20sᴛᴜᴅᴇɴᴛs%20ᴋᴇɴʏᴀ%20Website%20and%20I%20would%20like%20to%20know%20more%20about%20the%20movement" target="_blank"><i class="fa fa-whatsapp"></i> 0746913931</a></b></p>
+            </div>
+            <div>
+                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326940/NMCS_KENYA/PROFILES/shikuku_x21d6g.jpg" alt="" id="leadershubslides"> <br> <b>Organising Secretary</b> <br> <i>Shikuku Emmanuel</i> <br> <b><a href="https://wa.me/+254757321358?text=Hello%20Shikuku!%20I've%20been%20viewing%20the%20ɴᴀᴛɪᴏɴᴀʟ%20ᴍᴏᴠᴇᴍᴇɴᴛ%20ᴏғ%20ᴄᴀᴛʜᴏʟɪᴄ%20sᴛᴜᴅᴇɴᴛs%20ᴋᴇɴʏᴀ%20Website%20and%20I%20would%20like%20to%20know%20more%20about%20the%20movement" target="_blank"><i class="fa fa-whatsapp"></i> 0757321358</a></b></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="profileslide" >
+            <div>
+                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326939/NMCS_KENYA/PROFILES/clinton_kdf6uo.jpg" alt="" id="leadershubslides"> <br> <b>Publicity Secretary</b> <br> <i>Clinton Maranga</i> <br> <b><a href="https://wa.me/+254768010294?text=Hello%20Clinton!%20I've%20been%20viewing%20the%20ɴᴀᴛɪᴏɴᴀʟ%20ᴍᴏᴠᴇᴍᴇɴᴛ%20ᴏғ%20ᴄᴀᴛʜᴏʟɪᴄ%20sᴛᴜᴅᴇɴᴛs%20ᴋᴇɴʏᴀ%20Website%20and%20I%20would%20like%20to%20know%20more%20about%20the%20movement" target="_blank"><i class="fa fa-whatsapp"></i> 0768010294</a></b></p>
+            </div>
+            <div>
+                <p><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661326939/NMCS_KENYA/PROFILES/ibrahim_q2xj32.jpg" alt="" id="leadershubslides"> <br> <b>Representative of NMCS to the NYC and KCCB</b>  <br> <i>Ibrahim Barasa</i> <br> <b><a href="https://wa.me/+254741256149?text=Hello%20Ibrahim!%20I've%20been%20viewing%20the%20ɴᴀᴛɪᴏɴᴀʟ%20ᴍᴏᴠᴇᴍᴇɴᴛ%20ᴏғ%20ᴄᴀᴛʜᴏʟɪᴄ%20sᴛᴜᴅᴇɴᴛs%20ᴋᴇɴʏᴀ%20Website%20and%20I%20would%20like%20to%20know%20more%20about%20the%20movement" target="_blank"><i class="fa fa-whatsapp"></i> 0741256149</a></b></p>
             </div>
           </div>
         </div>
@@ -326,11 +333,10 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-
-    </div>
-    <footer class="container">
+    <footer>
       <p>NMCS KENYA &copy; 2022</p>
     </footer>
+    
 <script src="js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://use.fontawesome.com/f06cf1997e.js"></script>
