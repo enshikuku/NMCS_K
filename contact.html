@@ -16,8 +16,8 @@
             list-style: none;
         }
         body {
-          background-color: rgba(218, 255, 30, 0.9);
-          height: max-content;
+            background-color: rgba(218, 255, 30, 0.9);
+            height: max-content;
         }
         .social_icons_main h1 {
             max-width: 500px;
@@ -150,87 +150,94 @@
             background-color: #1ddd57;
         }
         .container_social_icons .email a:hover {
-          letter-spacing: 3px;
-          transition: .4s;
-          color: #2f477a;
+            letter-spacing: 3px;
+            transition: .4s;
+            color: #2f477a;
         }
         .container_social_icons .email a {
-          text-decoration: none;
-          font-size: 18px;
-          transition: .4s;
-          color: black;
+            text-decoration: none;
+            font-size: 18px;
+            transition: .4s;
+            color: black;
         }
         .container_social_icons .email p {
-          font-size: 20px;
-          padding-top: 3px;
-          color: black;
-          text-align: center;
-          font-weight: bolder;
+            font-size: 20px;
+            padding-top: 3px;
+            color: black;
+            text-align: center;
+            font-weight: bolder;
         }
         .container_social_icons .email img {
-          position: relative;
-          top: 5px;
-          height: 20px;
+            position: relative;
+            top: 5px;
+            height: 20px;
         }
       
         .profileslide div {
-          width: 30%;
-          min-width: 200px;
-          height: fit-content;
-          text-align: center;
+            width: 30%;
+            min-width: 200px;
+            height: fit-content;
+            text-align: center;
         }
         .profileslide div p {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .profileslide a {
-          text-decoration: none;
-          border: 1px solid #00ff62;
-          background-color: #00ff62;
-          border-radius: 13px;
-          font-weight: bolder;
-          padding: 5px;
-          color: darkred;
-          transition: .3s;
+            text-decoration: none;
+            border: 1px solid #00ff62;
+            background-color: #00ff62;
+            border-radius: 13px;
+            font-weight: bolder;
+            padding: 5px;
+            color: darkred;
+            transition: .3s;
         }
         .profileslide a:hover {
-          letter-spacing: 2px;
-          transition: .3s;
+            letter-spacing: 2px;
+            transition: .3s;
         }
         .profileslide {
-          width: 100%;
-          display: flex;
-          flex-wrap: wrap;
-          flex-direction: row;
-          justify-content: space-around;
-          gap: 10px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 10px;
         }
         #leadershubslides {
-          height: 130px;
-          width: 130px;
-          border-radius: 50%;
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+        }
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 55vh;
         }
         .swiper-wrapper {
-          padding-bottom: 32px;
+            padding-bottom: 32px;
         }
         .swiper .swiper-button-prev, .swiper .swiper-button-next {
-          color: white;
+            color: white;
         }
         .swiper .swiper-pagination-bullet-active {
-          background: white;
+            background: white;
         }
         .swiper h3 {
-          text-align: center;
-          font-size: 25px;
+            text-align: center;
+            font-size: 25px;
         }
         .swiper {
-          padding-top: 50px;
+            padding-top: 50px;
         }
         header nav #contact {
-          border-bottom: 3px solid greenyellow;
-          color: greenyellow;
+            border-bottom: 3px solid greenyellow;
+            color: greenyellow;
         }
       </style>
 </head> 
@@ -247,7 +254,7 @@
     <nav>
       <a href="index.html" class="navTab">Home</a>            
       <a href="about.html" class="navTab">About Us</a>
-      <a href="rsc.html" class="navTab">Resources</a>
+      <a href="#" class="navTab">Resources</a>
       <a href="contact.html" class="navTab" id="contact">Contacts</a>
     </nav>
   </header>
@@ -262,7 +269,7 @@
           <li> <a href="https://chat.whatsapp.com/BvOBlwYagChLy8zOBhwYVE" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
         </ul>
         <div class="email">
-          <p>Email us! <br> <a href="mailto:nmcskenya2015@gmail.com"><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661327472/NMCS_KENYA/ICONS/gmail_pkljxg.png" alt=""> nmcskenya2015@gmail.com</a></p>
+          <p>Email us! <br> <a href="mailto:nmcskenya2015@gmail.com?subject=NMCS%20Kenya%20Website%20FAQ"><img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1661327472/NMCS_KENYA/ICONS/gmail_pkljxg.png" alt=""> nmcskenya2015@gmail.com</a></p>
         </div>
       </div>    
     </div> <br>
@@ -333,8 +340,18 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-    <footer>
-      <p>NMCS KENYA &copy; 2022</p>
+    <div id="reachusviaEmail">
+      <form action="mailto:nmcskenya2015@gmail.com?subject=NMCS%20Kenya%20Website%20FAQ">
+          <p>Feel free to get in touch with us</p>
+          <input type="text" class="form-input" name="" id="" placeholder="Full Name" required>
+          <input type="email" class="form-input" name="" id="" placeholder="Email Address" required>
+          <input type="text" class="form-input" name="" id="" placeholder="Phone number" required>
+          <textarea class="form-input" name="" id="" cols="30" rows="10" placeholder="Your message ..." required></textarea>
+          <input type="submit" value="Send Message">
+      </form>
+    </div>
+    <footer class="container">
+      <p>All Rights Reserved | NMCS Kenya &copy; 2022</p>
     </footer>
     
 <script src="js/main.js"></script>
