@@ -125,7 +125,7 @@
 .aboutContainer {
     font-size: 22px;
     padding: 25px 8%;
-    margin-bottom: 20px;
+    padding-bottom: 25px;
     background-color: rgba(255, 255, 255, .5);
 }
 .everyContainer {
