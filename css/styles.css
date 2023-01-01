@@ -213,19 +213,6 @@
 .aboutContainer li {
     font-size: 20px;
 }
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    padding: 5px;
-    width: 100%;
-    text-align: center;
-    background-color: #000000;
-    font-size: 15px;
-    color: #ffffff
-}
 .emailUs a {
     text-decoration: none;
     font-size: 18px;
@@ -258,7 +245,7 @@ footer {
 #reachusviaEmail form {
     margin: 0 auto;
     width: 45%;
-    min-width: 320px;
+    min-width: 290px;
     display: flex;
     flex-direction: column;
     font-size: 21px;
@@ -290,6 +277,19 @@ footer {
     transition: .6s;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+    font-size: 15px;
+    color: #ffffff
+}
 /* responsive */
 @media only screen and (max-width: 650px) {
     #logo {
