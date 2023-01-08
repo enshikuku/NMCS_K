@@ -90,6 +90,9 @@
     line-height: 60px;
     letter-spacing: 6px;
 }
+#slideshowMainContainer {
+    padding: 5%;
+}
 .indexContainer p {
     font-size: 22px;
 }
@@ -318,6 +321,11 @@ footer {
     }
     .indexContainer {
         padding: 15px 10%;
+    }
+    #slideshowMainContainer {
+        padding: 2%;
+        margin: 0;
+        border-radius: 0;
     }
 }
 /* Background */
